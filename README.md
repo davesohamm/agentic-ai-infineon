@@ -1,42 +1,123 @@
-Agentic Bug Hunter
 
-This program detects bugs in C++ code using AI.
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                             AGENTIC BUG HUNTER                               ║
+║                                                                              ║
+║                    AI-Powered Bug Detection for C++ Programs                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 
-How to run:
 
-Step 1: Create virtual environment
+────────────────────────────────────────────────────────────────────────────────
+OVERVIEW
+────────────────────────────────────────────────────────────────────────────────
+
+Agentic Bug Hunter is an AI-driven tool designed to automatically detect bugs
+in C++ source code. The system leverages modern AI APIs to analyze code,
+identify potential issues, and produce structured results for further analysis.
+
+Detected bugs are stored in a CSV file for easy review and processing.
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+PROJECT STRUCTURE
+────────────────────────────────────────────────────────────────────────────────
+
+Agentic-Bug-Hunter/
+│
+├── run.py
+├── requirements.txt
+├── .env
+│
+└── output/
+    └── output.csv
+
+All detected bugs will be saved inside:
+
+output/output.csv
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+SETUP AND EXECUTION
+────────────────────────────────────────────────────────────────────────────────
+
+Follow the steps below to run the project.
+
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1 — CREATE VIRTUAL ENVIRONMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 python -m venv venv
 
-Step 2: Activate virtual environment
 
-Windows:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2 — ACTIVATE VIRTUAL ENVIRONMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Windows
+
 venv\Scripts\activate
 
-Mac/Linux:
+Mac / Linux
+
 source venv/bin/activate
 
-Step 3: Install requirements
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 3 — INSTALL DEPENDENCIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 pip install -r requirements.txt
 
-Step 4: Add your API keys
 
-Open the .env file and paste your keys:
 
-HUGGINGFACE_API_KEY=paste_your_key_here
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 4 — ADD API KEYS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Open the `.env` file and add your API keys:
+
+HUGGINGFACE_API_KEY=paste_your_key_here  
 GROQ_API_KEY=paste_your_key_here
 
-Step 5: Run the program
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 5 — RUN THE PROGRAM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 python run.py
 
-The results will be saved in output/output.csv
 
-That's it.
 
-Team members:
-Soham - Bug detector
-Vedant - Bug explainer  
-Jenil - Database
-Diti - API server
+────────────────────────────────────────────────────────────────────────────────
+OUTPUT
+────────────────────────────────────────────────────────────────────────────────
+
+After execution, the detected bugs will be stored in:
+
+output/output.csv
+
+The CSV file contains structured information about the detected issues.
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+TEAM
+────────────────────────────────────────────────────────────────────────────────
+
+Soham   ── Bug Detector Agent
+Vedant  ── Bug Explainer Agent
+Jenil   ── Database  
+Diti    ── APIs 
+
+
+
+────────────────────────────────────────────────────────────────────────────────
+END
+────────────────────────────────────────────────────────────────────────────────
+```
